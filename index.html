@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maxmark Technical Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="myPage">
+
+    <!-- Sidebar on click -->
+    <nav class="w3-sidebar w3-bar-block w3-yellow w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-display-topright w3-text-blue">Close
+            <i class="fa fa-remove"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button">Link 5</a>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-red"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Team</a>
+            <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Work</a>
+            <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Price</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-red">Contact</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-purple" title="Search"><i
+                    class="fa fa-search"></i></a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team" class="w3-bar-item w3-button">Team</a>
+            <a href="#work" class="w3-bar-item w3-button">Work</a>
+            <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="#" class="w3-bar-item w3-button">Search</a>
+        </div>
+    </div>
+
+    <!-- Image Header -->
+    <div class="w3-display-container w3-animate-opacity">
+        <img src="https://scontent.flos3-2.fna.fbcdn.net/v/t39.30808-6/454853897_10234316909892827_8745853600977885762_n.jpg?stp=dst-jpg_s600x600&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGOOcIyWshzcMiw9093LTFdltJjuKYCnoCW0mO4pgKegNO9y_UsqZXXmGkcx5PcKR2epVHl6_3yldzFlrmQD-q2&_nc_ohc=rZhjGJNIr_sQ7kNvgFrpJI3&_nc_zt=23&_nc_ht=scontent.flos3-2.fna&_nc_gid=As0j726KXHzFtktC5kGje8W&oh=00_AYBedHpQPfpDkfAfZ2zbEJChOS0qN0OMUYEY9VuZmYX--Q&oe=673E880B"
+            alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+            <button onclick="document.getElementById('id01').style.display='block'"
+                class="w3-button w3-xlarge w3-theme w3-hover-orange" title="Go To W3.CSS">Maxmark Technical
+                Services</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+            <header class="w3-container w3-teal w3-display-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-blue w3-display-topright"><i class="fa fa-remove"></i></span>
+                <h4>Oh Wow, welcome to our corporation..</h4>
+                <h5>Because we can offer you a <i class="fa fa-smile-o"> smile</i></h5>
+            </header>
+            <div class="w3-container">
+                <p>Cool huh? Ok, enough teasing around..</p>
+                <p>Go to our page <a class="w3-text-red"
+                        href="https://web.facebook.com/photo/?fbid=10234316909932828&set=pcb.10234316941773624&__cft__[0]=AZXeHc51W9VNo1oilAiK38CCwS6AoQkuJk3XuIT1P9NMD6wLv09MkKS6IIQ7C3xUANlhqF5yAYH3BH7bh0dImk3dQwpDHeTjt2FT4Y2-hlbiHwFAPcVv6f4nmavo3ZsKZVpGObEcSiFtnG1rOqbFadFh-McpsPL018hJThUSBl6Muw&__tn__=*bH-R">Maxmark
+                        Technical Services</a> to Know more!</p>
+            </div>
+            <footer class="w3-container w3-blue">
+                <p>Modal footer</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Team Container -->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+        <h2>OUR TEAM</h2>
+        <p>Meet the team </p>
+
+        <div class="w3-row"><br>
+
+            <div class="w3-quarter">
+                <img src="https://scontent.flos3-1.fna.fbcdn.net/v/t1.6435-9/172307229_10226269731878406_2318345871351019045_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeGlLPCfIh0gNLAqmdzPmEKg3CD1Jzd0vtjcIPUnN3S-2PnSyUt8EvoxEPEtFLDlgJKW0DZCkRlRrODgvqMIX86E&_nc_ohc=13-PtdEbuEoQ7kNvgHRsVxL&_nc_zt=23&_nc_ht=scontent.flos3-1.fna&_nc_gid=AyFUzdpaAECUyAKSMgrw5lk&oh=00_AYD_Bt-SzkPWWgteZNTZAISZl6xaC1sgVvlRFXII4utOmw&oe=67602676"
+                    alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Mr Joseph Aderibigbe Adetoro</h3>
+                <p>CEO and Founder of Maxmark Technical Services</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="https://scontent.flos2-1.fna.fbcdn.net/v/t39.30808-6/434774940_10233358598175633_6084898910018631358_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHc_sc2I_ttkc9pcNuh2aesmiwimuVkWwqaLCKa5WRbCnO2l7gISCDEE1266C5yq8RRxFBzN8G7lBVgzpMNRnol&_nc_ohc=DzIPV6yUC9EQ7kNvgFn-e6e&_nc_zt=23&_nc_ht=scontent.flos2-1.fna&_nc_gid=AvLa1AGWxehGlcjhOSUj4of&oh=00_AYDsCzBk9mfJdBMCG71i8TBxr-oGHylytgt7DrLHR0MkAg&oe=673E8CF4"
+                    alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Mrs Esther Aderibigbe</h3>
+                <p>General Manager</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Mr Dakar</h3>
+                <p>Co-Founder</p>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Work Row -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+        <div class="w3-quarter">
+            <h2>Our Work</h2>
+            <p>We deal with fire fighting equipments like Fire alarms, Smoke detector, Sprinklers and also deals in the
+                Installation of camera's.</p>
+        </div>
+
+
+        <!-- Container -->
+        <div class="w3-container" style="position:relative">
+            <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+                style="position:absolute;top:-28px;right:24px">+</a>
+        </div>
+
+        <!-- Pricing Row -->
+        <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+            <h2>PRICING</h2>
+            <p>Choose a pricing plan that fits your needs.</p><br>
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">Fire Alarms</p>
+                    </li>
+                    <li class="w3-padding-16"><b>10GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>10</b> Emails</li>
+                    <li class="w3-padding-16"><b>10</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">Pro</p>
+                    </li>
+                    <li class="w3-padding-16"><b>25GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>25</b> Emails</li>
+                    <li class="w3-padding-16"><b>25</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">Premium</p>
+                    </li>
+                    <li class="w3-padding-16"><b>50GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>50</b> Emails</li>
+                    <li class="w3-padding-16"><b>50</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Container -->
+        <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+            <div class="w3-row">
+                <div class="w3-col m5">
+                    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span>
+                    </div>
+                    <h3>Address</h3>
+                    <p>Swing by for a cup of coffee, or whatever.</p>
+                    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Ebute-Metta, Nigeria</p>
+                    <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +234 8029418015</p>
+                    <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ajoseph379@gmail.com</p>
+                </div>
+                <div class="w3-col m7">
+                    <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php"
+                        target="_blank">
+                        <div class="w3-section">
+                            <label>Name</label>
+                            <input class="w3-input" type="text" name="Name" required>
+                        </div>
+                        <div class="w3-section">
+                            <label>Email</label>
+                            <input class="w3-input" type="text" name="Email" required>
+                        </div>
+                        <div class="w3-section">
+                            <label>Message</label>
+                            <input class="w3-input" type="text" name="Message" required>
+                        </div>
+                        <input class="w3-check" type="checkbox" checked name="Like">
+                        <label>I Like it!</label>
+                        <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image of location/map -->
+        <img src="data:image/jpeg;base64,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"
+            class="w3-image w3-greyscale-min" style="width:100%;">
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+            <h4>Follow Us</h4>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i
+                    class="fa fa-facebook"></i></a>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i
+                    class="fa fa-twitter"></i></a>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i
+                    class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i
+                    class="fa fa-instagram"></i></a>
+            <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
+                    class="fa fa-linkedin"></i></a>
+            <p>Powered by <a href="https//maxmark technical services/.com"
+                    target="_blank">Maxmark.html,css,javascript</a></p>
+
+            <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+                <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+                <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+                        <i class="fa fa-chevron-circle-up"></i></span></a>
+            </div>
+        </footer>
+
+        <script>
+            // Script for side navigation
+            function w3_open() {
+                var x = document.getElementById("mySidebar");
+                x.style.width = "300px";
+                x.style.paddingTop = "10%";
+                x.style.display = "block";
+            }
+
+            // Close side navigation
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+
+            // Used to toggle the menu on smaller screens when clicking on the menu button
+            function openNav() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+</body>
+
+</html>
